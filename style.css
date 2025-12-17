@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #050505;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+header, footer {
+  padding: 15px;
+  border-bottom: 2px solid #2a2a35;
+}
+
+footer {
+  border-top: 2px solid #2a2a35;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#gameContainer {
+  position: relative;
+  border: 2px solid #2a2a35;
+  box-shadow: 0 0 40px rgba(0,0,0,0.9);
+}
+
+canvas {
+  display: block;
+  background-image: url("fundo.png");
+  background-size: cover;
+}
+
+/* UI */
+#ui {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.bar {
+  width: 120px;
+  height: 12px;
+  background: #400;
+  border: 1px solid #900;
+  margin-bottom: 6px;
+}
+
+#hpBar {
+  height: 100%;
+  background: #e00;
+  width: 100%;
+}
